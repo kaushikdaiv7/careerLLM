@@ -16,17 +16,38 @@ Before you begin, ensure you have met the following requirements:
 
 To install CareerLLM, follow these steps:
 
-#### Cloning the GitHub Repository
-
-Clone the repository to your local machine using the following command:
+Clone the repository to your local machine using the following command and install all the required libraries:
 
 ```bash
 git clone https://github.com/piyushkanadje/careerLLM.git
 
-cd CareerLLM
+cd CareerLLM/
 
 pip install -r requirements.txt
 
+cd reactLLM/
+
 npm install
+```
+
+### Running the web app
+
+## To run the backend server, navigate to the Backend/ directory in the project folder as follow and follow the steps:
+
+```bash
+cd Backend/
+
+uvicorn main:app --reload --loop asyncio
+```
+
+## To run the frontend, navigate to the reactLLM/ directory in the project folder as follow and follow the steps:
+
+```bash
+cd reactLLM/
+
+npm start
+```
+
+
 
 
